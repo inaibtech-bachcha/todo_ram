@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <div class="theme-switcher">
+                <button id="theme-toggle">Toggle Theme</button>
+            </div>
+        </header>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new todo..." autocomplete="off">
+            <button type="submit">Add</button>
+        </form>
+        <ul id="todo-list" class="todo-list"></ul>
+        <div class="filters">
+            <button id="filter-all" class="active">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Completed</button>
+        </div>
+        <div class="clear-container">
+            <button id="clear-completed">Clear Completed</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
